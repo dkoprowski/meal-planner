@@ -7,7 +7,7 @@
       "~~/*": ["./*"],
       "@@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@nuxt/content", "@nuxt/router"]
+    "types": ["@nuxt/types", "@nuxt/content", "@nuxt/router", "@nuxtjs/axios"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }
