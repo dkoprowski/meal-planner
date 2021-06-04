@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>meal</h1>
+    <h1>{{ title }}</h1>
     <Block
       v-for="block in blocks"
       :key="block.id"
@@ -32,9 +32,9 @@ export default {
         }
       )
 
-      blocksResponse.results.forEach((entry) => {
-        console.log(entry)
-      })
+      // blocksResponse.results.forEach((entry) => {
+      //   console.log(entry)
+      // })
 
       const blocks = blocksResponse.results
         .filter((meal) => meal?.type !== 'unsupported')
@@ -52,6 +52,12 @@ export default {
 
       return { blocks: {} }
     }
+  },
+  computed: {
+    title() {
+      const id = this.$route.params.id
+      return this.$store.state.meals.titles[id]
+    },
   },
 }
 </script>
