@@ -49,6 +49,9 @@ jobs:
         run: yarn lint
 
       - name: Generate
+        env: 
+          DATABASE_ID: ${{ secrets.DATABASE_ID }}
+          NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
         run: yarn run generate
 
       - name: Deploy
