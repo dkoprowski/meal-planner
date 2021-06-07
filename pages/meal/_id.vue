@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
+    <h1>
+      <NuxtLink :to="`/`">{{ title }}</NuxtLink>
+    </h1>
     <Block
       v-for="block in blocks"
       :key="block.id"
@@ -17,8 +19,8 @@ export default {
   components: {
     Block,
   },
-  async asyncData({ params, $axios }) {
-    const MY_NOTION_TOKEN = 'secret_m7ZTC9PKYmRFxOkqKE7156RxH04aMaNqXPPErIRLXJt'
+  async asyncData({ env, params, $axios }) {
+    const MY_NOTION_TOKEN = env.notionSecret
 
     try {
       const blocksResponse = await $axios.$get(

@@ -42,4 +42,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  env: {
+    databaseId: process.env.DATABASE_ID,
+    notionSecret: process.env.NOTION_SECRET,
+  },
 }
