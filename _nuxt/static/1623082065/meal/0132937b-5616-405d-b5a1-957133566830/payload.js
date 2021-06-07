@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/meal/0132937b-5616-405d-b5a1-957133566830", {data:[{blocks:[]}],fetch:{},mutations:[]});

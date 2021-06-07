@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/day/3", {data:[{}],fetch:{},mutations:[]});

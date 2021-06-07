@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/day/d423dfbc-dcf3-4625-a096-03206b0f120e", {data:[{}],fetch:{},mutations:[]});
